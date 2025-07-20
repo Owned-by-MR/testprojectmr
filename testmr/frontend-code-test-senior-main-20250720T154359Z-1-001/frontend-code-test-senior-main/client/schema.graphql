@@ -1,0 +1,24 @@
+type Product {
+  id: Int!
+  name: String!
+  power: String  
+  description: String
+  price: Float!
+  quantity: Int
+  brand: String
+  weight: Float
+  height: Float
+  width: Float
+  length: Float
+  dimensions: String
+  model_code: String
+  colour: String
+  img_url: String
+
+}
+
+type Query {
+  product(id: Int!): Product
+  products: [Product!]!
+
+}
